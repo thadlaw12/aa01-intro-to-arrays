@@ -5,10 +5,9 @@ array contains three consecutive numbers in consecutive increasing order, like
 */
 
 function threeIncreasing(arr){
-    arr.sort();
-    for(let i = 0; i < arr.length; i++){
-
-    }
+    if(arr.find((i) => arr[i] + arr[i + 1] + arr[i + 2])){
+        return false;
+    }   return true;
 }
 
 // console.log(threeIncreasing([3, 2, 11, 12, 13, 2, 4]));     // true
