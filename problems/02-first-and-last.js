@@ -5,7 +5,16 @@ array. If there is an odd number of elements in the array, then the function
 should return the difference between the first and last elements of the array.
 */
 
-// Your code here 
+function firstAndLast(arr){
+    let sum = 0;
+    let diff = 0;
+    if(arr.length % 2 === 0){
+       sum = arr[0] + arr[arr.length - 1];
+       return sum;
+    } else (arr.length % 2 !== 0)
+        diff = arr[0] - arr[arr.length - 1];
+        return diff;
+    }
 
 
 // console.log(firstAndLast([1, 2, 3, 4]));    // 5

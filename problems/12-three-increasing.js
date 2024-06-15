@@ -4,8 +4,12 @@ array contains three consecutive numbers in consecutive increasing order, like
 7, 8, 9.
 */
 
-// Your code here 
+function threeIncreasing(arr){
+    arr.sort();
+    for(let i = 0; i < arr.length; i++){
 
+    }
+}
 
 // console.log(threeIncreasing([3, 2, 11, 12, 13, 2, 4]));     // true
 // console.log(threeIncreasing([2, 7, 8, 9]));                 // true

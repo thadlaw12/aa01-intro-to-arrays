@@ -3,8 +3,14 @@ Define a function called maxVal that takes in an array of numbers as a
 parameter. The function should return the largest number of the array. If the
 array is empty, the function should return null.
 */
-
-// Your code here 
+function maxVal(arr){
+    if(arr.length === 0){
+        return null;
+    } else {
+    let max = Math.max(...arr)
+    return max;
+    }
+}
 
 
 // console.log(maxVal([4, 6, 3, 5, 42, 4])); // 42

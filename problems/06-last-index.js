@@ -4,7 +4,15 @@ function should return the last index where the character can be found in the
 array.  If no character exists in the array, return -1.
 */
 
-// Your code here 
+function lastIndex(arr, char){
+    for(let i = arr.length - 1; i >= 0; i--){
+        if(arr[i] === char){
+            return arr.lastIndexOf(char);
+        } else{
+            return -1;
+        }
+    }
+}
 
 
 // console.log(lastIndex(["a", "b", "c", "a"], "a"));

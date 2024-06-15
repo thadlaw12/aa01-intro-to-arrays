@@ -5,7 +5,15 @@ return a boolean indicating whether the target element is in the array.
 Solve this using a loop.
 */
 
-// Your code here 
+function hasElement(arr, ele){
+    for(let i = 0; i <= arr.length - 1; i++){
+        if(arr.includes(ele)){
+            return true;
+        } else {
+            return false;
+        }
+    }
+} 
 
 
 // console.log(hasElement(['a', 'b', 'c', 'e'], 'c')); // true

@@ -6,7 +6,15 @@ in the array. If it's not in the array, the function should return -1. Solve
 this using a loop.
 */
 
-// Your code here 
+function getIndexOf(arr, ele){
+    for(let i = 0; i <= arr.length - 1; i++){
+        if(arr.includes(ele)){
+            return arr.indexOf(ele);
+        } else {
+            return -1;
+        }
+    }
+}
 
 
 // console.log(getIndexOf(['a', 'b', 'c', 'e'], 'c')); // 2
